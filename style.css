@@ -1,0 +1,13 @@
+/* VARIABLES */
+:root {
+	/* FONTS */
+	--font: Menlo;
+	/* COLORS */
+	--bg-color: white;
+
+	/* NUMBERS */
+}
+
+body {
+	font-family: var(--font);
+}
