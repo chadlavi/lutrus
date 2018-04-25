@@ -2,12 +2,33 @@
 :root {
 	/* FONTS */
 	--font: Menlo;
+
 	/* COLORS */
-	--bg-color: white;
+	/* PRIMARY COLORS */
+	--blue:			#51A8D7;
+	--light-blue:	#dcedff;
+	--red:			#9c3848;
+	--green:		#62c370;
+	--purple: 		#41337a;
+	--black:		#333;
+	--white:		white;
+
+	/* COLOR USES */
+	--bg-color:		var(--white);
+	--text-color:	var(--black);
 
 	/* NUMBERS */
+	--border-radius: 5px;
+	--font-size: 16px;
 }
 
 body {
 	font-family: var(--font);
+	font-size: var(--font-size);
+	color: var(--black);
+}
+
+a {
+	text-decoration: none;
+	color: var(--blue);
 }
