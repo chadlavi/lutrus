@@ -1,4 +1,4 @@
-# ![icon](site/favicon.ico?raw=true&s=30) lutr.us
+# ![](site/favicon.ico?raw=true)<!-- .element height="30px" width="30px" --> lutr.us
 
 to run:
 * `python3 ../https-server.py` inside the `site` directory (ideally in a tmux session).
