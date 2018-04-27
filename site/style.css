@@ -7,15 +7,18 @@
 
 	/* COLORS */
 	/* PRIMARY COLORS */
-	--black:		#333;
-	--blue:			#51A8D7;
-	--light-blue:	#dcedff;
-	--green:		#58af65;
-	--grey: 		#ddd;
-	--purple: 		#602c7a;
-	--red:			#9c3848;
-	--text-grey:	#999;
-	--white:		white;
+	--black:				#333;
+	--blue:					hsl(210, 40%, 50%);
+	--light-blue:			hsl(210, 40%, 70%);
+	--green:				hsl(130, 40%, 45%);
+	--green-background:		hsl(130, 20%, 75%);
+	--grey: 				#ddd;
+	--purple: 				hsl(270, 40%, 50%);
+	--purple-background:	hsl(270, 20%, 75%);
+	--red:					hsl(360, 40%, 50%);
+	--shadow:				#33333388;
+	--text-grey:			#999;
+	--white:				white;
 
 	/* COLOR USES */
 	--bg-color:		var(--white);
@@ -58,6 +61,14 @@ footer {
 	display: flex;
 	justify-content: center;
 }
+
+h1 + h2 {
+    font-size: 1em;
+    font-weight: lighter;
+	margin-top: -1.34em;
+    opacity: 0.5;
+}
+
 input {
 	border: 1px solid var(--background-color);
 	border-bottom: 1px solid var(--grey);
@@ -77,6 +88,14 @@ input:focus + label {
 
 input:not(:placeholder-shown):not(:focus) + label {
 	color: var(--grey);
+}
+
+p {
+	line-height: 150%;
+}
+
+p:not(:last-child) {
+	margin-bottom: 2em;
 }
 
 /* CLASSES */
@@ -99,6 +118,7 @@ input:not(:placeholder-shown):not(:focus) + label {
 	font-size: var(--font-size);
 	height: inherit;
 	padding: 10px 15px;
+	text-decoration: none;
 }
 
 .button.cta {
@@ -108,22 +128,35 @@ input:not(:placeholder-shown):not(:focus) + label {
 
 .button.green {
 	background-color: var(--green);
+	border-color: var(--green);
 }
+
 
 .button.red {
 	background-color: var(--red);
+	border-color: var(--red);
+}
+
+.card {
+	background: var(--white);
+    box-shadow: 5px 5px var(--shadow);
+    color: var(--black);
+    padding: calc(var(--y-space) * 2) calc(var(--x-space) * 2);
 }
 
 .centered {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .column {
+	flex-basis: var(--column-width);
 	margin: auto;
+	max-width: 100%;
 	text-align: left;
 	width: var(--column-width);
-	max-width: 100%;
 }
 
 .fullpage {
@@ -142,12 +175,12 @@ input:not(:placeholder-shown):not(:focus) + label {
 }
 
 .hero-green {
-	background: var(--green);
+	background: var(--green-background);
 	color: var(--white);
 }
 
 .hero-purple {
-	background: var(--purple);
+	background: var(--purple-background);
 	color: var(--white);
 }
 
