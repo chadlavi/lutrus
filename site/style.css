@@ -3,16 +3,16 @@
 	/* VARIABLES */
 
 	/* FONTS */
-	--font: Menlo;
+	--font: Menlo, Monaco, monospace;
 
 	/* COLORS */
 	/* PRIMARY COLORS */
 	--black:		#333;
 	--blue:			#51A8D7;
 	--light-blue:	#dcedff;
-	--green:		#62c370;
+	--green:		#58af65;
 	--grey: 		#ddd;
-	--purple: 		#41337a;
+	--purple: 		#602c7a;
 	--red:			#9c3848;
 	--text-grey:	#999;
 	--white:		white;
@@ -45,6 +45,19 @@ a {
 	color: var(--blue);
 }
 
+code {
+	background: var(--grey);
+	border-radius: 3px;
+	color: var(--red);
+	padding: 3px;
+}
+
+footer {
+	background: var(--blue);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+}
 input {
 	border: 1px solid var(--background-color);
 	border-bottom: 1px solid var(--grey);
@@ -58,7 +71,11 @@ input:focus {
 	border-bottom: 1px solid var(--blue);
 }
 
-input:not(:placeholder-shown) + label {
+input:focus + label {
+	color: var(--blue);
+}
+
+input:not(:placeholder-shown):not(:focus) + label {
 	color: var(--grey);
 }
 
@@ -70,20 +87,23 @@ input:not(:placeholder-shown) + label {
 
 .block {
 	display: block;
+	margin-bottom: 5px;
 }
 
 .button {
 	background-color: var(--purple);
-	border: none;
+	border: 1px solid var(--purple);
 	border-radius: var(--border-radius);
 	color: var(--white);
+	cursor: pointer;
 	font-size: var(--font-size);
 	height: inherit;
-	padding: 5px 10px;
+	padding: 10px 15px;
 }
 
 .button.cta {
 	background-color: var(--blue);
+	border-color: var(--blue);
 }
 
 .button.green {
@@ -121,8 +141,23 @@ input:not(:placeholder-shown) + label {
 	color: var(--white);
 }
 
-.hero-blue a {
-	color: var(--light-blue);
+.hero-green {
+	background: var(--green);
+	color: var(--white);
+}
+
+.hero-purple {
+	background: var(--purple);
+	color: var(--white);
+}
+
+[class*="hero-"] a {
+	color: var(--white);
+}
+
+div.name {
+	display: inline-block;
+	width: 49%;
 }
 
 .small {
