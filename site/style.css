@@ -62,11 +62,21 @@ footer {
 	justify-content: center;
 }
 
+[class*="hero-"] h1 {
+	font-size: 4em;
+}
+
 h1 + h2 {
     font-size: 1em;
     font-weight: lighter;
 	margin-top: -1.34em;
     opacity: 0.5;
+}
+
+img {
+	max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 input {
@@ -122,6 +132,10 @@ p:not(:last-child) {
 	text-decoration: none;
 }
 
+.button.big {
+	padding: 15px 20px;
+}
+
 .button.cta {
 	background-color: var(--blue);
 	border-color: var(--blue);
@@ -140,7 +154,6 @@ p:not(:last-child) {
 
 .card {
 	background: var(--white);
-    box-shadow: 5px 5px var(--shadow);
     color: var(--black);
     padding: calc(var(--y-space) * 2) calc(var(--x-space) * 2);
 }
@@ -194,6 +207,10 @@ p:not(:last-child) {
 div.name {
 	display: inline-block;
 	width: 49%;
+}
+
+.shadow {
+    box-shadow: 5px 5px var(--shadow);
 }
 
 .small {
