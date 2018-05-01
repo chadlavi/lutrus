@@ -2,6 +2,13 @@
 
 <html lang="en">
     <head>
+		<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-KCS6P2H');</script>
+		<!-- End Google Tag Manager -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta property="og:description" content="the simple search engine for modern architectural lighting">
 		<meta property="og:title" content="lutrus">
@@ -10,20 +17,24 @@
 		<title>lutr.us</title>
     </head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCS6P2H"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<div class="centered fullpage hero-blue">
 			<div class="column">
 				<h1>lutrus</h1>
 				<h2>the simple search engine for modern architectural lighting</h2>
-				<p><a href="#search">Search</a> and <a href="#filter">filter</a> by keyword, style, color temperature, price, size, and more.</p>
+				<p><a href="#search" id="searchlink">Search</a> and <a href="#filter" id="filterlink">filter</a> by keyword, style, color temperature, price, size, and more.</p>
 			</div>
 			<div class="column card">
 				<p>lutrus is in private beta for architects and designers.</p>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup_top">
-					<form action="https://arazoo.us9.list-manage.com/subscribe/post?u=b249c07a5e78e290ce4779bcb&amp;id=e9bf889983" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="column validate" target="_blank" validate>
+					<form action="https://arazoo.us9.list-manage.com/subscribe/post?u=b249c07a5e78e290ce4779bcb&amp;id=e9bf889983" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="column validate" target="_blank" validate>
 						<div id="mc_embed_signup_scroll_top">
 					<div class="mc-field-group">
-						<input type="email" value="" name="EMAIL" class="required email block fullwidth" placeholder=" " id="mce-EMAIL" required>
+						<input type="email" value="" name="EMAIL" class="required email block fullwidth" placeholder=" " id="mce-EMAIL-top" required>
 						<label for="mce-EMAIL" class="block small space-bottom">Email Address</label>
 					</div>
 						<div id="mce-responses" class="clear">
@@ -31,7 +42,7 @@
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>
 						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b249c07a5e78e290ce4779bcb_e9bf889983" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Get early access" name="subscribe" id="mc-embedded-subscribe" class="button cta"></div>
+						<div class="clear"><input type="submit" value="Get early access" name="subscribe" id="mc-embedded-subscribe-top" class="button cta"></div>
 						</div>
 					</form>
 				</div>
@@ -43,7 +54,7 @@
 				<p>We've all done it: you go to google and type in some keywords, then start digging through the results. A couple hours later, maybe you found a fixture&mdash;or maybe you just wasted an hour.</p>
 				<p>That seems like a big waste of time to us. Lutrus is a search engine specifically for modern architectural lighting fixtures, which means when you search, you only get useful results.</p>
 				<p><img src="search-example.jpg"></p>
-				<p class="centered"><a class="button cta space-all" href="#mc_embed_signup">Get early access</a></p>
+				<p class="centered"><a class="button cta space-all" href="#mc_embed_signup" id="searchsectionsignup">Get early access</a></p>
 			</div>
 		</div>
 		<div class="centered fullpage hero-purple" id="filter">
@@ -53,7 +64,7 @@
 				<p>Exactly. It shouldn't.</p>
 				<p><img src="filter-example.jpg"></p>
 				<p>lutrus lets you filter down to just, say, warm ceiling lights under $100, or LED trimless cans that have a 4" minimum depth.</p>
-				<p class="centered"><a href="#mc_embed_signup" class="button cta space-all">Get early access</a></p>
+				<p class="centered"><a href="#mc_embed_signup" class="button cta space-all" id="filtersectionsignup">Get early access</a></p>
 			</div>
 		</div>
 		<!-- Begin MailChimp Signup Form -->
